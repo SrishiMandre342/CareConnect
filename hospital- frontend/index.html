@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karnataka Hospital Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/2966/2966486.png" 
+         alt="Hospital Logo" class="logo" style="height:60px;">
+    <div>
+      <h1>CareConnect&#9877;</h1>
+      <h4>Your Health, Our Priority ♥</h4>
+    </div>
+  </header>
+
+  <main>
+    <section class="district-select">
+      <h2>Select Your District</h2>
+      <div class="district-grid">
+        <!-- Districts as boxes -->
+        <div class="district-card" onclick="fetchDoctors('Bagalkote')">Bagalkote</div>
+        <div class="district-card" onclick="fetchDoctors('Ballari')">Ballari</div>
+        <div class="district-card" onclick="fetchDoctors('Belagavi')">Belagavi</div>
+        <div class="district-card" onclick="fetchDoctors('Bengaluru Rural')">Bengaluru Rural</div>
+        <div class="district-card" onclick="fetchDoctors('Bengaluru Urban')">Bengaluru Urban</div>
+        <div class="district-card" onclick="fetchDoctors('Bidar')">Bidar</div>
+        <div class="district-card" onclick="fetchDoctors('Chamarajanagar')">Chamarajanagar</div>
+        <div class="district-card" onclick="fetchDoctors('Chikkaballapur')">Chikkaballapur</div>
+        <div class="district-card" onclick="fetchDoctors('Chikkamagaluru')">Chikkamagaluru</div>
+        <div class="district-card" onclick="fetchDoctors('Chitradurga')">Chitradurga</div>
+        <div class="district-card" onclick="fetchDoctors('Dakshina Kannada')">Dakshina Kannada</div>
+        <div class="district-card" onclick="fetchDoctors('Davanagere')">Davanagere</div>
+        <div class="district-card" onclick="fetchDoctors('Dharwad')">Dharwad</div>
+        <div class="district-card" onclick="fetchDoctors('Gadag')">Gadag</div>
+        <div class="district-card" onclick="fetchDoctors('Hassan')">Hassan</div>
+        <div class="district-card" onclick="fetchDoctors('Haveri')">Haveri</div>
+        <div class="district-card" onclick="fetchDoctors('Kalaburagi')">Kalaburagi</div>
+        <div class="district-card" onclick="fetchDoctors('Kodagu')">Kodagu</div>
+        <div class="district-card" onclick="fetchDoctors('Kolar')">Kolar</div>
+        <div class="district-card" onclick="fetchDoctors('Koppal')">Koppal</div>
+        <div class="district-card" onclick="fetchDoctors('Mandya')">Mandya</div>
+        <div class="district-card" onclick="fetchDoctors('Mysuru')">Mysuru</div>
+        <div class="district-card" onclick="fetchDoctors('Raichur')">Raichur</div>
+        <div class="district-card" onclick="fetchDoctors('Ramanagara')">Ramanagara</div>
+        <div class="district-card" onclick="fetchDoctors('Shivamogga')">Shivamogga</div>
+        <div class="district-card" onclick="fetchDoctors('Tumakuru')">Tumakuru</div>
+        <div class="district-card" onclick="fetchDoctors('Udupi')">Udupi</div>
+        <div class="district-card" onclick="fetchDoctors('Uttara Kannada')">Uttara Kannada</div>
+        <div class="district-card" onclick="fetchDoctors('Vijayanagara')">Vijayanagara</div>
+        <div class="district-card" onclick="fetchDoctors('Vijayapura')">Vijayapura</div>
+        <div class="district-card" onclick="fetchDoctors('Yadgir')">Yadgir</div>
+      </div>
+    </section>
+
+    <section id="doctorList">
+      <h2>Doctors Available</h2>
+      <div class="doctors-container" id="doctorsContainer"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
